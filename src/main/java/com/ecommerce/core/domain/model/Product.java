@@ -1,5 +1,14 @@
 package com.ecommerce.core.domain.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Product {
 
     private int id; 
@@ -9,4 +18,5 @@ public class Product {
     private int stock; 
     private String imageUrl; 
     private boolean isActive; 
+
 }
