@@ -1,6 +1,7 @@
 package com.ecommerce.core.adapters.out.persistence;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.stereotype.Repository;
 
@@ -42,4 +43,9 @@ public class JpaUserRepository implements UserRepository{
         throw new UnsupportedOperationException("Unimplemented method 'findAll'");
     }
 
+    @Override
+     public Optional<User> findByEmail(String email) {
+        return repo.findByEmail(email)
+                       .map(mapper::toDomain);
+    }
 }
