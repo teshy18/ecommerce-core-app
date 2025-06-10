@@ -28,4 +28,16 @@ public class ProductServiceImpl implements ProductService {
         throw new UnsupportedOperationException("Unimplemented method 'getAllProducts'");
     }
 
+    @Override
+    public void editProduct(Product product) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'editProduct'");
+    }
+
+    @Override
+    public void deleteProduct(Product product) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'deleteProduct'");
+    }
+
 }
