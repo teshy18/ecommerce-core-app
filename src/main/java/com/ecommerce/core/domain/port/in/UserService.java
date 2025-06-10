@@ -6,8 +6,14 @@ import com.ecommerce.core.domain.model.User;
 
 public interface UserService {
 
-    void createUser(User user);
+    User createUser(User user);
+
+    User editUser(User user);
+
+    User deletUSer(User user);
 
     List<User> getAllUser();
+
+
 
 }
