@@ -9,6 +9,7 @@ import com.ecommerce.core.infrastructure.persistence.dbo.ProductDbo;
 
 @Mapper(componentModel = "spring")
 public interface ProductMapper {
+    
     Product toDomain(ProductRequestDto dto);
 
     ProductResponseDto toResponseDto(Product product);
